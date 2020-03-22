@@ -1,0 +1,195 @@
+,,,Poverty Line,,,,Head count Ratio,,,,,
+Sr. No.,,State,2004-05(61st  Rnd),,2011-12(68 Rnd),,2004-05(61st  Rnd),,,2011-12(61st  Rnd),,
+,State code,,Rural ,Urban,Rural ,Urban,Rural ,Urban,Total,Rural ,Urban,Total
+1,28,Andhra Pradesh,433.43,563.16,860,"1,009",32.3,23.4,29.9,10.96,5.81,9.2
+2,12,Arunachal Pradesh,547.14,618.45,930,"1,060",33.6,23.5,31.1,38.93,20.33,34.67
+3,18,Assam,478,600.03,828,"1,008",36.4,21.8,34.4,33.89,20.49,31.98
+4,10,Bihar,433.43,526.18,778,923,55.7,43.7,54.4,34.06,31.23,33.74
+5,22,Chhatisgarh,398.92,513.7,738,849,55.1,28.4,49.4,44.61,24.75,39.93
+6,7,Delhi,541.39,642.47,"1,145","1,134",15.6,12.9,13.1,12.92,9.84,9.91
+7,30,Goa,608.76,671.15,"1,090","1,134",28.1,22.2,25,6.81,4.09,5.09
+8,24,Gujarat,501.58,659.18,932,"1,152",39.1,20.1,31.8,21.54,10.14,16.63
+9,6,Haryana,529.42,626.41,"1,015","1,169",24.8,22.4,24.1,11.64,10.28,11.16
+10,2,Himachal Pradesh,520.4,605.74,913,"1,064",25,4.6,22.9,8.48,4.33,8.06
+11,1,Jammu & Kashmir,522.3,602.89,891,988,14.1,10.4,13.2,11.54,7.2,10.35
+12,20,Jharkhand,404.79,531.35,748,974,51.6,23.8,45.3,40.84,24.83,36.96
+13,29,Karnataka,417.84,588.06,902,"1,089",37.5,25.9,33.4,24.53,15.25,20.91
+14,32,Kerala,537.31,584.7,"1,018",987,20.2,18.4,19.7,9.14,4.97,7.05
+15,23,Madhya Pradesh,408.41,532.26,771,897,53.6,35.1,48.6,35.74,21,31.65
+16,27,Maharashtra,484.89,631.85,967,"1,126",47.9,25.6,38.1,24.22,9.12,17.35
+17,14,Manipur,578.11,641.13,"1,118","1,170",39.3,34.5,38,38.8,32.59,36.89
+18,17,Meghalaya,503.32,745.73,888,"1,154",14,24.7,16.1,12.53,9.26,11.87
+19,15,Mizoram,639.27,699.75,"1,066","1,155",23,7.9,15.3,35.43,6.36,20.4
+20,13,Nagaland,687.3,782.93,"1,270","1,302",10,4.3,9,19.93,16.48,18.88
+21,21,Orissa,407.78,497.31,695,861,60.8,37.6,57.2,35.69,17.29,32.59
+22,3,Punjab,543.51,642.51,"1,054","1,155",22.1,18.7,20.9,7.66,9.24,8.26
+23,8,Rajasthan,478,568.15,905,"1,002",35.8,29.7,34.4,16.05,10.69,14.71
+24,11,Sikkim,531.5,741.68,930,"1,226",31.8,2.9,31.1,9.85,3.66,8.19
+25,61,Tamil Nadu,441.69,559.77,880,937,37.5,19.7,28.9,15.83,6.54,11.28
+26,16,Tripura,450.49,555.79,798,920,44.5,22.5,40.6,16.53,7.42,14.05
+27,9,Uttar Pradesh,435.14,532.12,768,941,42.7,34.1,40.9,11.62,10.48,11.26
+27,5,Utarakhand,486.24,602.39,880,1082,35.1,26.2,32.7,30.4,26.06,29.43
+29,19,West Bengal,445.38,572.51,783,981,38.2,24.4,34.3,22.52,14.66,19.98
+30,34,Pondicherry,385.45,506.17,"1,301","1,309",22.9,9.9,14.1,17.06,6.3,9.69
+,,India,446.68,578.8,816,"1,000",41.8,25.7,37.2,25.7,13.7,21.92
+
+
+
+,,2. Poverty line of Tamil Nadu has been used for Andaman and Nicobar Island.,,,,,,,,,,
+,,3. Urban Poverty Line of Punjab has been used for both rural and urban areas of Chandigarh.,,,,,,,,,,
+,,4. Poverty Line of Maharashtra has been used for Dadra & Nagar Haveli.,,,,,,,,,,
+,,5. Poverty line of Goa has been used for Daman & Diu.,,,,,,,,,,
+,,6. Poverty Line of Kerala has been used for Lakshadweep.,,,,,,,,,,
+
+
+,,,sctr,rnd,stste_code,name,povrtyline,,
+,,,1,61,28,ANP,433.43,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<433.43 & state_com==28,replace poor=0 if state_com==28 & poor==.
+,,,1,61,12,ARP,547.14,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<547.14 & state_com==12,replace poor=0 if state_com==12 & poor==.
+,,,1,61,18,ASS,478,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<478 & state_com==18,replace poor=0 if state_com==18 & poor==.
+,,,1,61,10,BIH,433.43,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<433.43 & state_com==10,replace poor=0 if state_com==10 & poor==.
+,,,1,61,22,CHT,398.92,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<398.92 & state_com==22,replace poor=0 if state_com==22 & poor==.
+,,,1,61,7,DLI,541.39,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<541.39 & state_com==7,replace poor=0 if state_com==7 & poor==.
+,,,1,61,30,GOA,608.76,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<608.76 & state_com==30,replace poor=0 if state_com==30 & poor==.
+,,,1,61,24,GUJ,501.58,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<501.58 & state_com==24,replace poor=0 if state_com==24 & poor==.
+,,,1,61,6,HAR,529.42,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<529.42 & state_com==6,replace poor=0 if state_com==6 & poor==.
+,,,1,61,2,HMP,520.4,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<520.4 & state_com==2,replace poor=0 if state_com==2 & poor==.
+,,,1,61,1,JMK,522.3,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<522.3 & state_com==1,replace poor=0 if state_com==1 & poor==.
+,,,1,61,20,JHK,404.79,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<404.79 & state_com==20,replace poor=0 if state_com==20 & poor==.
+,,,1,61,29,KAR,417.84,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<417.84 & state_com==29,replace poor=0 if state_com==29 & poor==.
+,,,1,61,32,KER,537.31,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<537.31 & state_com==32,replace poor=0 if state_com==32 & poor==.
+,,,1,61,23,MAP,408.41,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<408.41 & state_com==23,replace poor=0 if state_com==23 & poor==.
+,,,1,61,27,MHR,484.89,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<484.89 & state_com==27,replace poor=0 if state_com==27 & poor==.
+,,,1,61,14,MNP,578.11,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<578.11 & state_com==14,replace poor=0 if state_com==14 & poor==.
+,,,1,61,17,MGL,503.32,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<503.32 & state_com==17,replace poor=0 if state_com==17 & poor==.
+,,,1,61,15,MZR,639.27,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<639.27 & state_com==15,replace poor=0 if state_com==15 & poor==.
+,,,1,61,13,NGL,687.3,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<687.3 & state_com==13,replace poor=0 if state_com==13 & poor==.
+,,,1,61,21,ORS,407.78,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<407.78 & state_com==21,replace poor=0 if state_com==21 & poor==.
+,,,1,61,3,PUN,543.51,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<543.51 & state_com==3,replace poor=0 if state_com==3 & poor==.
+,,,1,61,8,RAJ,478,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<478 & state_com==8,replace poor=0 if state_com==8 & poor==.
+,,,1,61,11,SKM,531.5,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<531.5 & state_com==11,replace poor=0 if state_com==11 & poor==.
+,,,1,61,33,TAN,441.69,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<441.69 & state_com==33,replace poor=0 if state_com==33 & poor==.
+,,,1,61,16,TRP,450.49,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<450.49 & state_com==16,replace poor=0 if state_com==16 & poor==.
+,,,1,61,5,UTC,435.14,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<435.14 & state_com==5,replace poor=0 if state_com==5 & poor==.
+,,,1,61,9,UTP,486.24,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<486.24 & state_com==9,replace poor=0 if state_com==9 & poor==.
+,,,1,61,19,WEB,445.38,replace poor=1 if rnd==61 & sctr==1 & mpce_mrp<445.38 & state_com==19,replace poor=0 if state_com==19 & poor==.
+,,,2,61,28,ANP,563.16,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<563.16 & state_com==28,
+,,,2,61,12,ARP,618.45,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<618.45 & state_com==12,
+,,,2,61,18,ASS,600.03,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<600.03 & state_com==18,
+,,,2,61,10,BIH,526.18,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<526.18 & state_com==10,
+,,,2,61,22,CHT,513.7,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<513.7 & state_com==22,
+,,,2,61,7,DLI,642.47,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<642.47 & state_com==7,
+,,,2,61,30,GOA,671.15,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<671.15 & state_com==30,
+,,,2,61,24,GUJ,659.18,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<659.18 & state_com==24,
+,,,2,61,6,HAR,626.41,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<626.41 & state_com==6,
+,,,2,61,2,HMP,605.74,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<605.74 & state_com==2,
+,,,2,61,1,JMK,602.89,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<602.89 & state_com==1,
+,,,2,61,20,JHK,531.35,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<531.35 & state_com==20,
+,,,2,61,29,KAR,588.06,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<588.06 & state_com==29,
+,,,2,61,32,KER,584.7,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<584.7 & state_com==32,
+,,,2,61,23,MAP,532.26,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<532.26 & state_com==23,
+,,,2,61,27,MHR,631.85,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<631.85 & state_com==27,
+,,,2,61,14,MNP,641.13,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<641.13 & state_com==14,
+,,,2,61,17,MGL,745.73,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<745.73 & state_com==17,
+,,,2,61,15,MZR,699.75,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<699.75 & state_com==15,
+,,,2,61,13,NGL,782.93,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<782.93 & state_com==13,
+,,,2,61,21,ORS,497.31,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<497.31 & state_com==21,
+,,,2,61,3,PUN,642.51,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<642.51 & state_com==3,
+,,,2,61,8,RAJ,568.15,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<568.15 & state_com==8,
+,,,2,61,11,SKM,741.68,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<741.68 & state_com==11,
+,,,2,61,33,TAN,559.77,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<559.77 & state_com==33,
+,,,2,61,16,TRP,555.79,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<555.79 & state_com==16,
+,,,2,61,5,UTC,532.12,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<532.12 & state_com==5,
+,,,2,61,9,UTP,602.39,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<602.39 & state_com==9,
+,,,2,61,19,WEB,572.51,replace poor=1 if rnd==61 & sctr==2 & mpce_mrp<572.51 & state_com==19,
+,,,1,68,28,ANP,860,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<860 & state_com==28,
+,,,1,68,12,ARP,930,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<930 & state_com==12,
+,,,1,68,18,ASS,828,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<828 & state_com==18,
+,,,1,68,10,BIH,778,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<778 & state_com==10,
+,,,1,68,22,CHT,738,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<738 & state_com==22,
+,,,1,68,7,DLI,1145,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<1145 & state_com==7,
+,,,1,68,30,GOA,1090,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<1090 & state_com==30,
+,,,1,68,24,GUJ,932,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<932 & state_com==24,
+,,,1,68,6,HAR,1015,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<1015 & state_com==6,
+,,,1,68,2,HMP,913,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<913 & state_com==2,
+,,,1,68,1,JMK,891,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<891 & state_com==1,
+,,,1,68,20,JHK,748,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<748 & state_com==20,
+,,,1,68,29,KAR,902,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<902 & state_com==29,
+,,,1,68,32,KER,1018,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<1018 & state_com==32,
+,,,1,68,23,MAP,771,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<771 & state_com==23,
+,,,1,68,27,MHR,967,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<967 & state_com==27,
+,,,1,68,14,MNP,1118,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<1118 & state_com==14,
+,,,1,68,17,MGL,888,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<888 & state_com==17,
+,,,1,68,15,MZR,1066,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<1066 & state_com==15,
+,,,1,68,13,NGL,1270,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<1270 & state_com==13,
+,,,1,68,21,ORS,695,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<695 & state_com==21,
+,,,1,68,3,PUN,1054,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<1054 & state_com==3,
+,,,1,68,8,RAJ,905,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<905 & state_com==8,
+,,,1,68,11,SKM,930,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<930 & state_com==11,
+,,,1,68,33,TAN,880,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<880 & state_com==33,
+,,,1,68,16,TRP,798,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<798 & state_com==16,
+,,,1,68,5,UTC,768,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<768 & state_com==5,
+,,,1,68,9,UTP,880,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<880 & state_com==9,
+,,,1,68,19,WEB,783,replace poor=1 if rnd==68 & sctr==1 & mpce_mrp<783 & state_com==19,
+,,,2,68,28,ANP,1009,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1009 & state_com==28,
+,,,2,68,12,ARP,1060,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1060 & state_com==12,
+,,,2,68,18,ASS,1008,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1008 & state_com==18,
+,,,2,68,10,BIH,923,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<923 & state_com==10,
+,,,2,68,22,CHT,849,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<849 & state_com==22,
+,,,2,68,7,DLI,1134,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1134 & state_com==7,
+,,,2,68,30,GOA,1134,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1134 & state_com==30,
+,,,2,68,24,GUJ,1152,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1152 & state_com==24,
+,,,2,68,6,HAR,1169,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1169 & state_com==6,
+,,,2,68,2,HMP,1064,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1064 & state_com==2,
+,,,2,68,1,JMK,988,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<988 & state_com==1,
+,,,2,68,20,JHK,974,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<974 & state_com==20,
+,,,2,68,29,KAR,1089,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1089 & state_com==29,
+,,,2,68,32,KER,987,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<987 & state_com==32,
+,,,2,68,23,MAP,897,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<897 & state_com==23,
+,,,2,68,27,MHR,1126,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1126 & state_com==27,
+,,,2,68,14,MNP,1170,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1170 & state_com==14,
+,,,2,68,17,MGL,1154,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1154 & state_com==17,
+,,,2,68,15,MZR,1155,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1155 & state_com==15,
+,,,2,68,13,NGL,1302,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1302 & state_com==13,
+,,,2,68,21,ORS,861,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<861 & state_com==21,
+,,,2,68,3,PUN,1155,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1155 & state_com==3,
+,,,2,68,8,RAJ,1002,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1002 & state_com==8,
+,,,2,68,11,SKM,1226,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1226 & state_com==11,
+,,,2,68,33,TAN,937,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<937 & state_com==33,
+,,,2,68,16,TRP,920,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<920 & state_com==16,
+,,,2,68,5,UTC,941,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<941 & state_com==5,
+,,,2,68,9,UTP,1082,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<1082 & state_com==9,
+,,,2,68,19,WEB,981,replace poor=1 if rnd==68 & sctr==2 & mpce_mrp<981 & state_com==19,
+,,,Poverty Line,
+Sr. No.,,State,2011-12(68 Rnd),
+,State code,,Rural ,Urban
+1,28,Andhra Pradesh,860,"1,009"
+2,12,Arunachal Pradesh,930,"1,060"
+3,18,Assam,828,"1,008"
+4,10,Bihar,778,923
+5,22,Chhatisgarh,738,849
+6,7,Delhi,"1,145","1,134"
+7,30,Goa,"1,090","1,134"
+8,24,Gujarat,932,"1,152"
+9,6,Haryana,"1,015","1,169"
+10,2,Himachal Pradesh,913,"1,064"
+11,1,Jammu & Kashmir,891,988
+12,20,Jharkhand,748,974
+13,29,Karnataka,902,"1,089"
+14,32,Kerala,"1,018",987
+15,23,Madhya Pradesh,771,897
+16,27,Maharashtra,967,"1,126"
+17,14,Manipur,"1,118","1,170"
+18,17,Meghalaya,888,"1,154"
+19,15,Mizoram,"1,066","1,155"
+20,13,Nagaland,"1,270","1,302"
+21,21,Orissa,695,861
+22,3,Punjab,"1,054","1,155"
+23,8,Rajasthan,905,"1,002"
+24,11,Sikkim,930,"1,226"
+25,61,Tamil Nadu,880,937
+26,16,Tripura,798,920
+27,9,Uttar Pradesh,768,941
+27,5,Utarakhand,880,1082
+29,19,West Bengal,783,981
+30,34,Pondicherry,"1,301","1,309"
+,,India,816,"1,000"
